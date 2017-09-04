@@ -2,7 +2,7 @@ var katzDeli = [];
 
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name);
-  return katzDeliLine.length;
+  return `"Welcome, ${name}. You are number ${katzDeliLine.length} in line."`
 }
 
 function nowServing(katzDeliLine){
@@ -10,7 +10,6 @@ function nowServing(katzDeliLine){
     return 'There is nobody waiting to be served!';
   }
   var serving = katzDeliLine.shift();
-  return `"Welcome, ${serving}. You are number 1 in line."`
   return `Currently serving ${serving}.`
 
 }
