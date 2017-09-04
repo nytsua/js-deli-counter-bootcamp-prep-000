@@ -19,5 +19,5 @@ function currentLine(){
   for(let i =1;i<toReturn.length-1; i++){
     toReturn += `, ${i+1}. katzDeliLine[i]`
   }
-  toReturn += '.'
+  return toReturn;
 }
