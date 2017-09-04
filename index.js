@@ -11,6 +11,8 @@ function nowServing(katzDeliLine){
   }
   var serving = katzDeliLine.shift();
   return `"Welcome, ${serving}. You are number 1 in line."`
+  return `Currently serving ${serving}.`
+
 }
 
 function currentLine(katzDeliLine){
